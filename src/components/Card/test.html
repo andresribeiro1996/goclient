@@ -1,0 +1,19 @@
+<html>
+<body>
+<div className="card text-white bg-dark mb-3">
+    <div className="card-header msg_head">{talk.name}</div>
+    <div className="card-body msg_card_body">
+        <CardChatContent  messages={talk.messages} person={talk.name}/>
+    </div>
+    <div className="card-footer">
+        <div className="input-group">
+            <textarea name="" className="form-control type_msg" placeholder="Type your message..."></textarea>
+            <div className="input-group-append">
+                <span className="input-group-text send_btn"><i className="fa fa-location-arrow"></i></span>
+            </div>
+        </div>
+    </div>
+    
+</div>
+</body>
+</html>
